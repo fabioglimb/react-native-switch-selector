@@ -143,6 +143,7 @@ export default class SwitchSelector extends Component {
       disabled,
       buttonMargin,
       options,
+      activeOpacity
     } = this.props;
 
     const { selected, sliderWidth } = this.state;
@@ -152,6 +153,7 @@ export default class SwitchSelector extends Component {
 
       return (
         <TouchableOpacity
+          activeOpacity={activeOpacity}
           key={index}
           disabled={disabled}
           style={[
@@ -327,4 +329,5 @@ SwitchSelector.propTypes = {
   onPress: PropTypes.func,
   accessibilityLabel: PropTypes.string,
   testID: PropTypes.string,
+  activeOpacity: PropTypes.number
 };
