@@ -17,6 +17,7 @@ const styles = {
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
+    height: '100%'
   },
   animated: {
     borderWidth: 0,
